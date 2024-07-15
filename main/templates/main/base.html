@@ -1,0 +1,234 @@
+<DOCTYPE html>
+{% load static %}
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}OLUDIGITAL VENTURES{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendor/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link
+      rel="shortcut icon"
+      href="{% static '/assets/images/LOGO/FAVICON2.ico' %}"
+      type="image/x-icon"
+    />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0222863157587626"
+     crossorigin="anonymous"></script>
+    {% block head %}
+      
+    {% endblock head %}
+      
+  </head>
+  <body>
+    <!--toolbar-->
+    <section id="topbar" class="topbar d-flex align-items-center pallet-dark-bg">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+    <div class="contact-info d-flex align-items-center text-white">
+        <i class="bi bi-envelope d-flex align-items-center contact-link"><a href="mailto:info@oludigital.com.ng">info@oludigital.com.ng</a></i>
+        <i class="bi bi-phone d-flex align-items-center contact-link ms-4"><a href="tel:2348060371100" class="font-small-sm">+234-806-037 1100</a></i>
+    </div>
+    <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+    </div>
+    </div>
+    </section>
+    <header class="sticky-top" id="header">
+
+      <!--navbar-->
+      <nav class="navbar navbar-expand-lg  pallet-dark-bg navbar-dark ">
+        <div class="container-fluid">
+          <a href="/" class="navbar-brand">
+            <img
+              src="{% static 'assets/images/LOGO/Official ICON.png' %}"
+              class="me-1"
+              alt=""
+            />
+            Oludigital  Ventures
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler float-end border-0"
+            id="nav-toggle"
+            data-bs-target="#collapsibleNavbar"
+            data-bs-toggle="collapse"
+            onclick="elementToggle('nav-toggle','i')"
+          >
+            <i class="bi bi-list mobile-nav-show"></i>
+            <i class="bi bi-x active mobile-nav-hide" hidden></i>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="nav navbar-nav me-auto nav-justified" id="collnav">
+              <li class="nav-item">
+                <a href="/" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#services"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  role="button"
+                  >Services</a
+                >
+                <div class="dropdown-menu">
+                  <a href="{% url 'main:internet' %}" class="dropdown-item">Internet connectivity</a>
+                  <a href="404.html" class="dropdown-item">Networking</a>
+                  <a href="{% url 'main:software' %}" class="dropdown-item">Software Develpment</a>
+                  <a href="404.html" class="dropdown-item">Computer Maintanance</a>
+                  <a href="404.html" class="dropdown-item">Website Solution</a>
+                  <a href="{% url 'main:cybercafe' %}" class="dropdown-item">Cyber cafe Maintanance</a>
+                  <a href="{% url 'main:importexport' %}" class="dropdown-item">Import/Export Services</a>
+                  <a href="404.html" class="dropdown-item">Traning and Consultng</a>
+                  <a href="{% url 'main:fire' %}" class="dropdown-item">Fire and safety</a>
+                  <a href="{% url 'main:realestate' %}" class="dropdown-item">Real Estate</a>
+                </div>
+              </li>
+              <li class="nav-item"><a href="404.html" class="nav-link">Shop</a></li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">Hardware</a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">Software</a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">Real Estate</a>
+              </li>
+              <li class="nav-item">
+                <a href="404.html" class="nav-link">Security</a>
+              </li>
+              <li class="nav-item">
+                <a href="#footer" class="nav-link">Contact Us</a>
+              </li>
+            </ul>
+            <form action="404.html" class="d-flex m-auto">
+              <input type="search" class="form-control me-3" />
+              <div class="btn-group">
+                <button type="submit" class="btn btn-success pallet-dark rounded-2">
+                  <i class="bi bi-search"></i>
+                </button>
+                
+                <!--{% if user.is_authenticated %}
+                  <div class="navbar-text ms-3">
+                    <p class="navbar-text float-end m-auto">
+                      <a href="404.html">
+                        <i class="bi bi-cart" id="cart-icon">
+                          <span class="badge bg-warning rounded-pill" id="cartnum">5</span>
+                        </i>
+                      </a>
+                    </p>
+                 </div>
+                 <p class="navpar-text d-inline text-white-50 ms-4" style="font-size: x-small; font-weight: bold; font-family: var(--font-primary); position: relative; top: 20px;">hey&nbsp;{{user}}</p>
+                {% endif %}
+              </div>
+            </form>
+            {% if user.is_authenticated %}
+            <div class="navbar-text ms-0 ms-md-3">
+              <form action="/logout/" method="post" class="d-grid d-md-block">
+                {% csrf_token %}
+                <center>
+                  <button type="submit" class="btn btn-outline-light w-100" style="position: relative; top:1vh; font-size: smaller;">Logout</button>
+                </center>
+              </form>
+            </div> 
+            {% else %}
+            <center>
+              <div class="btn-group btn-sm">
+                <a href="/sign-up" class="btn btn-outline-light">Sign&nbsp;Up</a><a href="/login" class="btn btn-outline-light">Login</a>
+              </div>
+            </center>
+            {% endif %}-->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock content %}
+    </main>
+    <footer class="bg-dark footer mt-3 " id="footer">
+      <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-info">
+              <a href="/" class="logo d-flex align-items-center pt-5">
+                <span>Oludigital Ventures</span>
+              </a>
+              <p>
+                We deliver comprehensive services and professional support to drive innovation and efficency in both IT and real estate domains. 
+                Let's transform your landscape, weather digital or physical, together.
+              </p>
+              <div class="social-links d-flex mt-4">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="404.html">About us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="404.html">Store</a></li>
+                <li><a href="404.html">Privacy policy</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><a href="{% url 'main:internet' %}">Internet Connectivity</a></li>
+                <li><a href="{% url 'main:realestate' %}">Real Estate</a></li>
+                <li><a href="{% url 'main:fire' %}">Fire and Safety</a></li>
+                <li><a href="404.html">Website Solution</a></li>
+                <li><a href="404.html">Computer Maintanance</a></li>
+                <li><a href="404.html">Ict Consulting and Traning</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+              <h4>Contact Us</h4>
+              <p>
+                ABEWELA PALACE,<br>
+                488, Ikorodu Road,<br>
+                Ketu 100007,<br>
+                Lagos State,<br>
+                NIGERIA.<br><br>
+                <strong>Phone:</strong> <a href="tel:2348060371100">+234-806-037 1100</a><br>
+                <strong>Email:</strong> <a href="mailto:info@oludigital.com.ng">info@oludigital.com.ng</a><br>
+              </p>
+
+            </div>
+
+          </div>
+      </div>
+      <div class="pallet-dark-bg p-3" id="copyright">
+        <div class="pallet-light d-md-block justify-content-lg-center">
+          <span class="text-center text-sm-start d-block d-sm-inline"
+            >Copyright &COPY; 2015 - 2030, Oludigital Ventures. All Rights
+            Reserved.</span
+          >
+          <span class="text-center text-sm-start d-block d-sm-inline float-none float-sm-end">Designed by Oludigital Ventures</span>
+        </div>
+      </div>
+    </footer>
+    <div class="floating-btn" role="button"><a href="https://wa.me/2348060371100" _blank><i class="bi bi-whatsapp"></i></a></div>
+    <script src="{% static 'vendor/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/script.js' %}"></script>
+  </body>
+</html>

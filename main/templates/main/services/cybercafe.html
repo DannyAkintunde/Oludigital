@@ -1,0 +1,190 @@
+{% extends 'main/inner.html' %}
+{% load static %}
+
+
+{% block title %}
+    Cyber cafe Maintanance and Setup
+{% endblock title %}
+
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/inner.css' %}">
+    <style>
+        #footer{
+            margin-top: 0 !important;
+        }
+    </style>
+{% endblock head %}
+    
+
+{% block breadcrumb %}
+    <div id="breadcrumb">
+        <h2>Cyber cafe Maintanance and Setup</h2>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'main:home' %}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'main:home' %}#services">Services</a></li>
+            <li class="breadcrumb-item active">Cyber cafe Maintanance</li>
+        </ul>
+    </div>
+{% endblock breadcrumb %}
+
+
+{% block body %}
+    <section
+    class="hero"
+    style="background-image: url('/static/assets/images/darkpcwide.jpg')"
+    >
+        <article>
+            <div class="img-contanier">
+            <div
+                class="carousel slide carousel-dark w-100 carousel-fade"
+                data-bs-ride="carousel"
+                id="showroom"
+            >
+                <ol class="carousel-indicators">
+                <li
+                    class="active"
+                    data-bs-target="#showroom"
+                    data-bs-slide-to="0"
+                ></li>
+                <li data-bs-target="#showroom" data-bs-slide-to="1"></li>
+                <li data-bs-target="#showroom" data-bs-slide-to="2"></li>
+                <li data-bs-target="#showroom" data-bs-slide-to="3"></li>
+                <li data-bs-target="#showroom" data-bs-slide-to="4"></li>
+                <li data-bs-target="#showroom" data-bs-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                    <img src="{% static 'assets/images/cybercafe.jpg' %}" alt="" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                    <img src="{% static 'assets/images/maintance.jpg' %}" alt="" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                    <img src="{% static 'assets/images/circut.jpg' %}" alt="" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                    <img src="{% static 'assets/images/people.jpg' %}" alt="" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                    <img src="{% static 'assets/images/nextgen.jpg' %}" alt="" />
+                    </div>
+                </div>
+                            <div class="carousel-item">
+                    <div class="container">
+                    <img src="{% static 'assets/images/desktopsetup.jpg' %}" alt="" />
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="content">
+                <div>
+                    <h2>We Can Help you Grow your Business</h2>
+                    <p>
+                        Our cyber cafe setup and maintenance service is designed to take the hassle out of operating a cyber cafe. 
+                        From installation and configuration to regular maintenance, we'll help you keep your business running smoothly. 
+                        With our expertise and dedication to quality service, you can focus on your customers and growing your business.
+                    </p>
+                    <div>
+                        <a
+                            class="btn btn-outline-success"
+                            href="https://wa.me/2348060371100?text=I%20need%20your%20cyber%20caffe%20secvice"
+                            >Get started <i class="bi bi-phone"></i
+                        ></a>
+                        <a href="#" class="btn btn-outline-warning ms-0 ms-sm-2 mt-1 mt-sm-0"
+                            >Shop for one <i class="bi bi-cart"></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <div class="descrition">
+        <section class="d-block d-sm-flex flex-row justify-content-between align-items-center">
+            <div class="body">
+                <div>
+                    <p>
+                        We'll handle all the technical aspects, from setting up your computers and network to troubleshooting any issues that may arise. 
+                        We'll also provide you with regular maintenance and support to ensure your cyber cafe is always up and running.
+                    </p>
+                    <p>
+                        We understand that each cyber cafe is unique, with different needs and requirements. 
+                        That's why we offer a fully customizable service, tailored to your specific needs. 
+                        We'll work with you to design a solution that's perfect for your business. 
+                        We'll take into account your space, budget, and goals, to create a setup that's efficient and effective. 
+                        And if you ever need help or have questions, we're always here to support you. You can rely on us to keep your cyber cafe running smoothly.
+                    </p>
+                </div>
+            </div>
+            <div class="img-contanier">
+                <img src="{% static 'assets/images/collaboration.jpg' %}" class="img-fluid">
+            </div>
+        </section>  
+    </div>
+    <section class="d-block d-sm-flex flex-row justify-content-between align-items-center pallet-dark-bg p-2" >
+            <div class="img-contanier">
+                <img src="{% static 'assets/images/female.jpg' %}" class="img-fluid">
+            </div>
+            <div class="body">
+                <div>
+                    <p>
+                        By choosing our cyber cafe setup and maintenance service, you'll enjoy a number of benefits. 
+                        First and foremost, you'll save time and money. 
+                        With our help, you won't have to spend hours trying to set up your cyber cafe or troubleshoot issues. 
+                        We'll also save you money by ensuring your setup is optimized for efficiency and cost-effectiveness. 
+                        Plus, with regular maintenance, you'll avoid costly repairs and downtime. 
+                        You'll also benefit from our expertise and experience, ensuring your cyber cafe is set up correctly and efficiently from the ground up.
+                    </p>
+                </div>
+            </div>
+    </section>
+    <div class="descrition">
+        <section class="d-block d-sm-flex flex-row justify-content-between align-items-center">
+            <div class="body">
+                <div>
+                    <p>
+                        Our cyber cafe setup and maintenance service includes a range of features and options to suit your needs. 
+                        We can help you choose the right equipment and software, and we can customize your setup to meet your requirements. 
+                        We also offer a range of maintenance options, from regular checkups and updates to on-demand support. 
+                        We're also happy to provide training for your staff, so they can operate your cyber cafe efficiently and effectively. 
+                        Whatever your needs, we're here to help. Just let us know what you're looking for, and we will help.
+                    </p>
+                </div>
+            </div>
+            <div class="img-contanier">
+                <img src="{% static 'assets/images/board.jpg' %}" class="img-fluid">
+            </div>
+        </section>
+    </div>   
+    <section class="d-block d-sm-flex flex-row justify-content-between align-items-center pallet-dark-bg p-2" >
+        <div class="body">
+            <div>
+                <p>
+                    Getting started with our cyber cafe setup and maintenance service is simple and straightforward. 
+                    Just give us a call or send us an email, and we'll schedule a consultation to discuss your needs. 
+                    We'll then work with you to create a customized plan, and we'll get to work on setting up your cyber cafe. 
+                    We'll take care of everything, so you can focus on running your business. It's really that easy!
+                </p>
+                <div>
+                    <a
+                        class="btn btn-outline-success"
+                        href="https://wa.me/2348060371100?text=I%20need%20yor%20internet%20cnnection%20services"
+                        >Get started <i class="bi bi-phone"></i
+                    ></a>
+                </div>
+            </div>
+        </div>
+    </section>     
+{% endblock body %}
+    
+    

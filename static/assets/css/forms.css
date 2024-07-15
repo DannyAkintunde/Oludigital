@@ -1,0 +1,49 @@
+:root {
+   --form-primary: #61b39044;
+}
+#formbody {
+    display: flex;
+    padding: 0;
+    height: 40rem;
+    background-image: url('/static/assets/images/earth.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#formbody .formbackground {
+    flex-grow: 3;
+    background-color: var(--form-primary);
+    opacity: 0.1;
+}
+#formbody .form {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    background-color: #fffd;
+}
+#footer {
+    margin-top: 0 !important;
+}
+.link{
+  color: var(--color-primary) ;
+  text-decoration: none ;
+}
+.link:hover {
+  color: var(--color-primary) !important;
+  text-decoration-line: underline;
+  text-decoration-color: #bad8b6;
+}
+@media screen and (max-width: 767px) {
+    #formbody .form {
+    display: flex;
+    height: 40rem;
+    background-color: var(--form-primary);
+    }
+    #formbody .formbackground {
+        visibility: hidden;
+        position: absolute;
+    }
+    #formbody {
+    display: block;
+    }
+}

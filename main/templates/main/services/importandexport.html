@@ -1,0 +1,182 @@
+{% extends 'main/inner.html' %}
+{% load static %}
+
+
+{% block title %}
+    Import and Export Services
+{% endblock title %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/inner.css' %}">
+    <style>
+        #footer{
+            margin-top: 0 !important;
+        }
+        .img-contanier.cta {
+            max-width: 30%;
+        }
+        @media screen and (max-width: 737px) {
+            .img-contanier.cta {
+                max-width: 100%;
+            }  
+        }
+    </style>
+{% endblock head %}
+
+{% block breadcrumb %}
+    <div id="breadcrumb">
+        <h2>Import and Export Services</h2>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'main:home' %}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'main:home' %}#services">Services</a></li>
+            <li class="breadcrumb-item active">Import and Export Services</li>
+        </ul>
+    </div>
+{% endblock breadcrumb %}
+
+
+{% block body %}
+    <section
+    class="hero"
+    style="background-image: url('/static/assets/images/cargo.jpg')"
+  >
+    <article>
+      <div class="img-contanier">
+        <div
+          class="carousel slide carousel-dark w-100 carousel-fade"
+          data-bs-ride="carousel"
+          id="showroom"
+        >
+          <ol class="carousel-indicators">
+            <li
+              class="active"
+              data-bs-target="#showroom"
+              data-bs-slide-to="0"
+            ></li>
+            <li data-bs-target="#showroom" data-bs-slide-to="1"></li>
+            <li data-bs-target="#showroom" data-bs-slide-to="2"></li>
+            <li data-bs-target="#showroom" data-bs-slide-to="3"></li>
+            <li data-bs-target="#showroom" data-bs-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <img src="{% static 'assets/images/cargo-bay.jpg' %}" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img src="{% static 'assets/images/ship.jpg' %}" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img src="{% static 'assets/images/ship2.jpg' %}" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img src="{% static 'assets/images/transport.jpg' %}" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img src="{% static 'assets/images/cargocrane.jpg' %}" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div>
+          <h2>We help you find the best property,land and assets at good prices</h2>
+          <p>
+            Our import and export services ae designed to help businesses like yours navigate the complex process of international trade.
+            Our experienced team will work with you to esure that your goods are cleared through coustoms efficiently and compliantly,
+            so you can get back ot focusing on what matters most - <span class="text-muted">growing your business</span>.
+          </p>
+          <div class="">
+            <a
+              class="btn btn-outline-success"
+              href="https://wa.me/2348060371100?text=I%20need%20your%20import%20and%20export%20services"
+              >Get started <i class="bi bi-phone"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </article>
+    </section>
+    <div class="descrition">
+        <section class="d-block d-sm-flex flex-row justify-content-around align-items-center">
+            <div class="">
+                <h3 class="pallet-dark">Import services <i class="bi bi-arrow-down-circle text-success"></i></h3>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-check pallet-light me-1"></i>Customs clearance and compliance</li>
+                    <li><i class="bi bi-check pallet-light me-1"></i>Freight forwarding and logistics</li>
+                    <li><i class="bi bi-check pallet-light me-1"></i>Warehousing and distribution</li>
+                    <li><i class="bi bi-check pallet-light me-1"></i>Trade compliance and advisory services</li>
+                    <li><i class="bi bi-check pallet-light me-1"></i>Import licensing and permits</li>
+                    <li><i class="bi bi-check pallet-light me-1"></i>Cargo insyrance and risk management</li>
+                </ul>
+            </div>
+            <div class="">
+                <h3 class="pallet-dark">Export services <i class="bi bi-arrow-up-circle text-danger"></i></h3>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-check pallet-light me-1"></i>Customs clearance and compliance</li>
+                    <li><i class="bi bi-check pallet-light me-1"></i>Freight forwarding and logistics</li>
+                    <li><i class="bi bi-check pallet-light me-1"></i>Warehousing and distribution</li>
+                    <li><i class="bi bi-check pallet-light me-1"></i>Trade compliance and advisory services</li>
+                    <li><i class="bi bi-check pallet-light me-1"></i>Export licensing and permits</li>
+                    <li><i class="bi bi-check pallet-light me-1"></i>Cargo insyrance and risk management</li>
+                </ul>
+            </div>
+        </section>  
+        <section class="d-block d-sm-flex flex-row justify-content-between align-items-center p-2" >
+            <div class="body">
+                <p>
+                    Our team of experts ha years of experience in navigating the comlex world of international trade. We'll work with you to create a customised import or export pln that meets your unique needs and ensures that your goods are delivered efficiently and effectively
+                </p>
+            </div>
+            <div class="img-contanier">
+                <img src="{% static 'assets/images/collaboration.jpg' %}" class="img-fluid rounded-2">
+            </div>
+        </section>
+    </div>
+    <section class="hero p-4" style="background-image: url('/static/assets/images/ship-yard.jpg');">
+        <div class="d-block d-sm-flex flex-row justify-content-between align-items-center">
+            <div class="body">
+                <div>
+                    <p>
+                        Ready to learn more about how aur import and export services can benefit your business? or want to get started chat with one of our agents.
+                    </p>
+                    <a
+                        class="btn btn-outline-success"
+                        href="https://wa.me/2348060371100?text=I%20have%20a%20question%20about%20real%20estate"
+                        >Ask a Question <i class="bi bi-whatsapp"></i
+                    ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero p-4" style="background-image: url('/static/assets/images/marketbuilding.jpg');">
+        <div class="d-block d-sm-flex flex-row justify-content-between align-items-center">
+            <div class="img-contanier cta">
+                <img src="{% static 'assets/images/female.jpg' %}" class="img-fluid rounded-2">
+            </div>
+            <div class="body">
+                <div>
+                    <p>
+                        Some benefits of working with our import and export services team include:
+                    </p>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-rocket-fill pallet-light"></i> Imptoved efficency and educed costs</li>
+                        <li><i class="bi bi-rocket-fill pallet-light"></i> Increased compliance and reduced risk</li>
+                        <li><i class="bi bi-rocket-fill pallet-light"></i> Access to our global network of logistics and transport providers</li>
+                        <li><i class="bi bi-rocket-fill pallet-light"></i> Expert guidance and suport every step of the way</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock body %}
+    

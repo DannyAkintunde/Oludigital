@@ -1,0 +1,154 @@
+{% extends 'main/inner.html' %}
+{% load static %}
+
+
+{% block title %}
+    Real Estate
+{% endblock title %}
+
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/inner.css' %}">
+    <style>
+        #footer{
+            margin-top: 0 !important;
+        }
+        .img-contanier.cta {
+            max-width: 30%;
+        }
+        @media screen and (max-width: 737px) {
+            .img-contanier.cta {
+                max-width: 100%;
+            }  
+        }
+    </style>
+{% endblock head %}
+
+
+{% block breadcrumb %}
+    <div id="breadcrumb">
+        <h2>Real Estate</h2>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'main:home' %}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'main:home' %}#services">Services</a></li>
+            <li class="breadcrumb-item active">Real Estate</li>
+        </ul>
+    </div>
+{% endblock breadcrumb %}
+
+
+{% block body %}
+    <section
+    class="hero"
+    style="background-image: url('/static/assets/images/realestate-bg.jpg')"
+  >
+    <article>
+      <div class="img-contanier">
+        <div
+          class="carousel slide carousel-dark w-100 carousel-fade"
+          data-bs-ride="carousel"
+          id="showroom"
+        >
+          <ol class="carousel-indicators">
+            <li
+              class="active"
+              data-bs-target="#showroom"
+              data-bs-slide-to="0"
+            ></li>
+            <li data-bs-target="#showroom" data-bs-slide-to="1"></li>
+            <li data-bs-target="#showroom" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <img src="{% static 'assets/images/home.jpg' %}" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img src="{% static 'assets/images/mansion.jpg' %}" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img src="{% static 'assets/images/marketbuilding.jpg' %}" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div>
+          <h2>We help you find the best property,land and assets at good prices</h2>
+          <p>
+            Our team of experienced real estate professionals are dedicated to finding the best deals on houses and apartments for our clients. 
+            We have years of experience in the real estate industry, and we know how to find the best deals on properties. 
+            Whether you're looking for a new home or an investment property, we can help you find the perfect property at the best possible price. 
+            We understand the complexities of the real estate market, and we're here to help you navigate the process and find the right property for your needs.
+          </p>
+          <div class="">
+            <a
+              class="btn btn-outline-success"
+              href="https://wa.me/2348060371100?text=I%20need%20yor%20internet%20cnnection%20services"
+              >Get started <i class="bi bi-phone"></i
+            ></a>
+            <a href="#" class="btn btn-outline-warning ms-0 ms-sm-2 mt-1 mt-sm-0"
+              >Shop for one <i class="bi bi-cart"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </article>
+    </section>
+    <div class="descrition">
+        <section class="d-block d-sm-flex flex-row justify-content-between align-items-center">
+            <div class="body">
+                <div>
+                    <p>
+                        At our company, we go above and beyond to help our clients find the perfect property. 
+                        We're not just here to find good deals - we're here to make your real estate dreams a reality. 
+                        Whether you're looking for a dream home or an investment property, we'll work tirelessly to help you find the property that's right for you. 
+                        We'll use our extensive knowledge of the real estate market to find the best properties in your price range and area of interest. 
+                        We're committed to providing excellent service and making your real estate experience a positive one.
+                    </p>
+                </div>
+            </div>
+            <div class="img-contanier">
+                <img src="{% static 'assets/images/collaboration.jpg' %}" class="img-fluid">
+            </div>
+        </section>  
+    </div>
+    <section class="hero p-4" style="background-image: url('/static/assets/images/marketbuilding.jpg');">
+        <div class="d-block d-sm-flex flex-row justify-content-between align-items-center">
+            <div class="img-contanier cta">
+                <img src="{% static 'assets/images/female.jpg' %}" class="img-fluid rounded-2">
+            </div>
+            <div class="body">
+                <div>
+                    <p>
+                        When it comes to finding the perfect property, choosing the right real estate professional is essential. 
+                        At our company, we're dedicated to providing outstanding service and helping our clients find the property of their dreams.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="d-block d-sm-flex flex-row justify-content-between align-items-center pallet-dark-bg p-2" >
+        <div class="body">
+            <div>
+                <p>
+                    With our years of experience and expertise, we'll make sure you have a positive and successful experience throughout the entire real estate process. 
+                    We're here to answer any questions and to support you every step of the way.
+                </p>
+                <div>
+                    <a
+                        class="btn btn-outline-success"
+                        href="https://wa.me/2348060371100?text=I%20have%20a%20question%20about%20real%20estate"
+                        >Ask a Question <i class="bi bi-whatsapp"></i
+                    ></a>
+                    <a href="tell:23460371100" class="btn btn-outline-primary ms-2">call <i class="bi bi-telephone"></i></a>
+                </div>
+            </div>
+        </div>
+    </section> 
+{% endblock body %}

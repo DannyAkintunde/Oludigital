@@ -1,0 +1,154 @@
+{% extends 'main/inner.html' %}
+
+{% load static %}
+
+{% block title %}
+    Fire and Safety
+{% endblock title %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/inner.css' %}">
+    <style>
+        #footer{
+            margin-top: 0 !important;
+        }
+        .img-contanier.cta {
+            max-width: 30%;
+        }
+        @media screen and (max-width: 737px) {
+            .img-contanier.cta {
+                max-width: 100%;
+            }  
+        }
+    </style>
+{% endblock head %}
+
+{% block breadcrumb %}
+    <div id="breadcrumb">
+        <h2>Fire and Safety</h2>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'main:home' %}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'main:home' %}#services">Services</a></li>
+            <li class="breadcrumb-item active">Fire and Safety</li>
+        </ul>
+    </div>
+{% endblock breadcrumb %}
+
+
+{% block body %}
+    <section
+    class="hero"
+    style="background-image: url('/static/assets/images/fireequipmnt.jpg')"
+  >
+        <article>
+        <div class="img-contanier">
+            <div
+            class="carousel slide carousel-dark w-100 carousel-fade"
+            data-bs-ride="carousel"
+            id="showroom"
+            >
+            <ol class="carousel-indicators">
+                <li
+                class="active"
+                data-bs-target="#showroom"
+                data-bs-slide-to="0"
+                ></li>
+                <li data-bs-target="#showroom" data-bs-slide-to="1"></li>
+                <li data-bs-target="#showroom" data-bs-slide-to="2"></li>
+                <li data-bs-target="#showroom" data-bs-slide-to="3"></li>
+                <li data-bs-target="#showroom" data-bs-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <div class="container">
+                    <img src="{% static 'assets/images/firesystems.jpg' %}" alt="" />
+                </div>
+                </div>
+                <div class="carousel-item">
+                <div class="container">
+                    <img src="{% static 'assets/images/firealarm.jpg' %}" alt="" />
+                </div>
+                </div>
+                <div class="carousel-item">
+                <div class="container">
+                    <img src="{% static 'assets/images/fireextigusher2.jpg' %}" alt="" />
+                </div>
+                </div>
+                <div class="carousel-item">
+                <div class="container">
+                    <img src="{% static 'assets/images/firefighter.jpg' %}" alt="" />
+                </div>
+                </div>
+                <div class="carousel-item">
+                <div class="container">
+                    <img src="{% static 'assets/images/enstigusher.jpg' %}" alt="" />
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="content">
+            <div>
+            <h2>We are one of the private organizations in Fire Protection Systems</h2>
+            <p>
+                We offers our services because every year, fire causes deaths and damages to property & costly materials. 
+                In that scenario we deal in all kinds of fire fighting and fire preventive systems as well as life safety equipment.
+            </p>
+            <div class="">
+                <a
+                class="btn btn-outline-success"
+                href="https://wa.me/2348060371100?text=I%20need%20your%20fire%20and%20safety%20services"
+                >Get started <i class="bi bi-phone"></i
+                ></a>
+            </div>
+            </div>
+        </div>
+        </article>
+    </section>
+    <div class="descrition">
+        <section class="d-block d-sm-flex flex-row justify-content-between align-items-center p-2" >
+            <div class="body">
+                <p>
+                    We are specilised in the Supply, Installation, Testing, Commissioning, 
+                    Servicing and Maintenance of various Fire Protection and Alarm Systems. 
+                    Our highly qualified and well-experienced team of Engineers is able to Install and Commission the system to meet the requirement of NFPA and other International & Local Authorities Requirements.
+                </p>
+                <p style="border-left: 2px solid; padding-left: 1rem; border-color: #777"><i class="bi bi-info pallet-light"></i>We also deal with Installation, Maintanance, and Commissioning for the systems supply.</p>
+            </div>
+            <div class="img-contanier">
+                <img src="{% static 'assets/images/collaboration.jpg' %}" class="img-fluid rounded-2">
+            </div>
+        </section>
+    </div>
+    <section class="d-block d-sm-flex flex-row justify-content-between align-items-center pallet-dark-bg" >
+        <div class="body">
+            <div>
+                <h3 class="mb-3">Range of Systems We offer</h3>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-check pallet-light"></i> All Types of Fire Extinguishers:(i.e) CO2, Dry Chemical Powder, Foam, Water, Wet Chemical and Helotron</li>
+                    <li><i class="bi bi-check pallet-light"></i> Dry and Wet Standpipe Systems</li>
+                    <li><i class="bi bi-check pallet-light"></i> Hydrants (all types)</li>
+                    <li><i class="bi bi-check pallet-light"></i> Sprinkler System</li>
+                    <li><i class="bi bi-check pallet-light"></i> Deluge System</li>
+                    <li><i class="bi bi-check pallet-light"></i> Water Mist System</li>
+                    <li><i class="bi bi-check pallet-light"></i> FM 200 Suppression System</li>
+                </ul>
+            </div>
+        </div>
+        <div class="body">
+            <div>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-check pallet-light"></i> Foam System</li>
+                    <li><i class="bi bi-check pallet-light"></i> Carbon Dioxide System</li>
+                    <li><i class="bi bi-check pallet-light"></i> Gas Detection System</li>
+                    <li><i class="bi bi-check pallet-light"></i> Wet Chemical Suppression System</li>
+                    <li><i class="bi bi-check pallet-light"></i> Fire Alarm System (Addressable and Conventional)</li>
+                    <li><i class="bi bi-check pallet-light"></i> Industrial Safety</li>
+                    <li><i class="bi bi-check pallet-light"></i> Monitors</li>
+                    <li><i class="bi bi-check pallet-light"></i> Emergency Lighting System and more.</li>
+                </ul> 
+            </div>
+        </div>
+    </section>
+{% endblock body %}
+    

@@ -1,0 +1,180 @@
+{% extends 'main/base.html' %}
+{% block content %}
+      <!--intro section-->
+      <section id="intro">
+        <div id="maincarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="overlay-image" style="background-image: url('static/assets/images/glowland.webp');"></div>
+              <div class="outer">
+              <div class="container inner">
+              <h1
+                class="pallet-dark roboto-bold"
+              >
+                Oludigital Ventures
+              </h1>
+                <p class="roboto-light-italic pallet-light">
+                  We are a Growing Breed of Computer Engineering, Information System &
+                  Technology Management, Import/Export Firm. dedicated to
+                  providing comprehensive and Value-added Information Technology
+                  Solutions and Management Support Services to IT
+                  Sector/institutions. We specialise in providing professional
+                  Services and support in Information Technology.
+                </p>
+              </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="overlay-image" style="background-image: url('static/assets/images/bg-tech.webp');"></div>
+              <div class="outer">
+              <div class="container inner">
+              <h1
+                class="pallet-dark roboto-bold"
+              >
+                Better ICT Solutions for your business
+              </h1>
+                <p class="roboto-light-italic pallet-light">
+                  We are a Growing Breed of Computer Engineering, Information System &
+                  Technology Management, Import/Export Firm. dedicated to
+                  providing comprehensive and Value-added Information Technology
+                  Solutions and Management Support Services to IT
+                  Sector/institutions. We specialise in providing professional
+                  Services and support in Information Technology.
+                </p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--goals section-->
+      <section id="ourgoal" class="container-fluid">
+        <div class="box-text">
+          <div class="section-title">
+            <h2 class="text-center text-capitalize pallet-light roboto-medium">
+              Our Goals
+            </h2>
+          </div>
+          <div class="d-flex h-cont">
+            <lottie-player
+              class="img-fluid"
+              src="assets/lottifiles/goals.json"
+              background="transparent"
+              speed="1"
+              direction="1"
+              mode="normal"
+              loop
+              autoplay
+              aria-hidden="true"
+            ></lottie-player>
+            <div class="d-flex ms-md-1 p-1">
+              <p class="pallet-light roboto-light-italic lead">
+                Our mission is to set standards for providing quality integrated
+                and scalable solutions that you can count on.<br />
+                We are dedicated to providing comprehensive solutions to
+                Government, Non-Profit Making Organisations and Private
+                enterprises using leading-edge technology.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--servcies-->
+      <section id="services" class="services">
+        <div class="container mt-5">
+          <div class="section-title">
+            <h2 class="text-capitalize pallet-light roboto-medium">Services we offer</h2>
+            <p class="text-secondary">
+              We are dedicated to providing comprehensive and Value-added
+              Information Technology Solutions and Management Support Services
+              to IT Sector/institutions. We specialise in providing professional
+              Services and support in Information Technology.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-xl-3 col-md-6 d-flex align-items-stretch">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-wifi"></i></div>
+              <h4><a href="{% url 'main:internet' %}">Internet Connectivity</a></h4>
+              <p>We are one of the leading internet solutions provider in Africa,offering individuals and corporate bodies with seamless internet connection at an affordable cost.</p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-code"></i></div>
+                <h4><a href="{% url 'main:software' %}">Software devlopment</a></h4>
+                <p>We  provide specialty software development for a broad range of Internet/Intranet related solutions.</p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-house"></i></div>
+              <h4><a href="{% url 'main:realestate' %}">Real Estate</a></a><h4>
+              <p>We help you with finding the best deals on houses and apartments </p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-fire"></i></div>
+              <h4><a href="fireandsafety.html">Fire and Safety</a></h4>
+              <p>We provides a friendly and efficient service to Home, Office and PC Users Onsite anywhere in Nigeria!</p>
+              </div>
+            </div>
+          </div>  
+          <div class="container-fluid">
+            <div class="collapse" id="collasableservises">
+              <div class="row mt-xl-3">
+                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0">
+                  <div class="icon-box">
+                    <div class="icon"><i class="bi bi-diagram-3"></i></div>
+                  <h4><a href="websitesolution.html">Website Solution</a></h4>
+                  <p>We offer the best website solution for your personal and business websites</p>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0">
+                  <div class="icon-box">
+                    <div class="icon"><i class="bi bi-laptop"></i></div>
+                  <h4><a href="{% url 'main:cybercafe' %}">Cyber cafe Maintanance/setup</a></h4>
+                  <p>We help in setup and maintain of your cybercafe business</p>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0">
+                  <div class="icon-box">
+                    <div class="icon"><i class="bi bi-signpost-split"></i></div>
+                    <h4><a href="{% url 'main:importexport' %}">Import and Export Services</a></h4>
+                    <p>We offer import and export services that can help you to move your goods abrod</p>
+                  </div>
+                </div>  
+                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0">
+                  <div class="icon-box">
+                    <div class="icon"><i class="bi bi-person-video3"></i></div>
+                  <h4><a href="404.html">Ict Consulting and Traning</a></h4>
+                  <p>We help in traning practisional and helpimg in you ict issuses</p>
+                  </div>
+                </div>    
+              </div>
+              <div class="row mt-xl-3 justify-content-center">
+                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0">
+                  <div class="icon-box">
+                    <div class="icon"><i class="bi bi-tools"></i></div>
+                  <h4><a href="404.html">Computer Maintanance</a></h4>
+                  <p>We help set up you coputer to connect to ecah other seemlessly.</p>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0">
+                  <div class="icon-box">
+                    <div class="icon"><i class="bi bi-hdd-network"></i></div>
+                  <h4><a href="404.html">Networking (LAN/WAN/WLAN)</a></h4>
+                  <p>We provides a friendly and efficient service to Home, Office and PC Users Onsite anywhere in Nigeria!.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a type="button" id="btn-toggle" class="float-end p-3" data-bs-toggle="collapse" href="#collasableservises" onclick="textToggle('btn-toggle')"><i class="bi bi-arrow-down-square-fill"></i> show more</a>
+
+          </div>
+          </div>
+        </div>
+      </section>
+{% endblock content %}
+    

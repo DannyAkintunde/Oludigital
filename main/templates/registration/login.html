@@ -1,0 +1,24 @@
+{% extends 'main/base.html' %} 
+{% load static %}
+{% block title %} Login {% endblock title %}
+{%load crispy_forms_tags %} 
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/forms.css' %}">
+{% endblock head %}
+    
+{% block content %}
+<div class="justify-content-between container-fluid" id="formbody">
+  <div class="container-fluid formbackground">
+    
+  </div>
+  <div class="container justify-content-center align-items-center form">
+    <form action="" method="post">
+        <h2 class="text-muted mb-3">Login in here</h2>
+      {% csrf_token %}{{form|crispy}}
+      <button type="submit" class="btn btn-success">Login</button>
+      <p>Don't have an account create one <a href="/sign-up" class="link">Here</a></p>
+    </form>
+  </div>
+</div>
+{% endblock content %}

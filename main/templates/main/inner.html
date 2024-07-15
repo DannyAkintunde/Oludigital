@@ -1,0 +1,37 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+
+{% block title %}
+    Inner page
+{% endblock title %}
+    
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/inner.css' %}">
+{% endblock head %}
+
+{% block content %}
+
+    {% block breadcrumb %}
+        <div id="breadcrumb">
+            <h2>Inner Page</h2>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Inner Page</li>
+            </ul>
+        </div>
+    {% endblock breadcrumb %}
+    
+    <div id="inner-page">
+        
+        {% block body %}
+            <div class="container" class="bg-body">
+                test text
+            </div>
+        {% endblock body %}
+            
+    </div>
+{% endblock content %}
+    

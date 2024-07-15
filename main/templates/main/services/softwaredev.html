@@ -1,0 +1,160 @@
+{% extends 'main/inner.html' %}
+{% load static %}
+
+
+{% block title %}
+    Software Develpment
+{% endblock title %}
+
+
+{% block breadcrumb %}
+    <div id="breadcrumb">
+        <h2>Software Develpment</h2>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'main:home' %}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'main:home' %}#services">Secvices</a></li>
+            <li class="breadcrumb-item active">Software Develpment</li>
+        </ul>
+    </div>
+{% endblock breadcrumb %}
+
+
+{% block body %}
+    <article class="intro">
+        <section class="hero" style="background-image: url('/static/assets/images/softwaredev-bg.jpg');">
+            <article>
+                <div class="img-contanier">
+                    <div class="carousel slide carousel-dark w-100 carousel-fade" data-bs-ride="carousel" id="showroom">
+                        <ol class="carousel-indicators">
+                            <li class="active" data-bs-target="#showroom" data-bs-slide-to="0"></li>
+                            <li data-bs-target="#showroom" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#showroom" data-bs-slide-to="2"></li>
+                            <li data-bs-target="#showroom" data-bs-slide-to="3"></li>
+                            <li data-bs-target="#showroom" data-bs-slide-to="4"></li>
+                            <li data-bs-target="#showroom" data-bs-slide-to="6"></li>
+                            <li data-bs-target="#showroom" data-bs-slide-to="5"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container">
+                                    <img src="{% static 'assets/images/softwaredemo.jpg' %}" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <img src="{% static 'assets/images/softwaredemo2.jpg' %}" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <img src="{% static 'assets/images/softwaredemo3.jpg' %}" alt="">
+                                </div>
+                            </div>                                                    
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <img src="{% static 'assets/images/progpc.jpg' %}" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <img src="{% static 'assets/images/softdevpy.jpg' %}" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <img src="{% static 'assets/images/softwaredev.jpg' %}" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <img src="{% static 'assets/images/collsoft.jpg' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>We are the one stop Software solution</h2>
+                        <p>
+                        We specialize in developing software solutions that meet the unique needs of our clients. 
+                        Our services include custom software development, web and mobile application development, and integration services. 
+                        Our team of experts will work with you to understand your business needs and develop a solution that meets your specific requirements. 
+                        We have extensive experience in a wide range of industries, 
+                        so we can provide you with the best possible solution for your business. 
+                        Contact us today to learn more about how we can help you succeed.
+                        </p>
+                        <div>
+                            <a class="btn btn-outline-success" href="https://wa.me/2348060371100?text=I%20need%20yor%20internet%20cnnection%20services">Get started <i class="bi bi-phone"></i></a>
+                            <a href="#" class="btn btn-outline-warning ms-0 ms-sm-2 mt-1 mt-sm-0">Shop for one <i class="bi bi-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <div class="descreption">
+            <div class="d-block d-sm-flex flex-row justify-content-between align-items-center">
+                <div class="body">
+                    <div>
+                        <p>
+                            Our custom software development services are designed to meet your specific business needs. 
+                            We work with you to understand your goals and objectives, 
+                            and we develop a solution that is tailored to your unique requirements. 
+                            Whether you need a new system from scratch or want to get an existing system, 
+                            we can help you achieve your goals. We have experience working with a variety of programming languages and platforms, 
+                            so we can develop the perfect solution for your business. Contact us today to get started.
+                        </p>
+                    </div>
+                </div>
+                <div class="img-contanier">
+                    <img src="{% static 'assets/images/software.jpg' %}" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="d-block d-sm-flex flex-row justify-content-between align-items-center">
+                <div class="body" style="width: 100%;">
+                    <div>
+                        <p class="mark text-muted" style="border-left: 3px solid grey; border-radius: 3px 0 0 3px;">
+                            <i class="bi bi-info pallet-dark"></i>
+                            We also deal wiith instalation of software.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-block d-sm-flex flex-row justify-content-between align-items-center">
+                <div class="img-contanier">
+                    <img src="{% static 'assets/images/chillprog.jpg' %}" alt="" class="img-fluid">
+                </div>
+                <div class="body">
+                    <div>
+                        <p>
+                            In addition to our custom software development services, we also offer web and mobile application development.
+                            Our team can create web applications that are user-friendly and effective,
+                            and we can also develop mobile applications for iOS and Android devices.
+                            We understand the importance of usability and functionality,
+                            and we use the latest technologies to ensure that your applications are user-friendly and effective.
+                            Contact us today to learn more about our web and mobile application development services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-block d-sm-flex flex-row justify-content-between align-items-center">
+                <div class="body">
+                    <div>
+                        <p>
+                           In addition to our custom software development services, we also offer web and mobile application development. Our team can create web applications that are user-friendly and effective, and we can also develop mobile applications for iOS and Android devices. We understand the importance of usability and functionality, and we use the latest technologies to ensure that your applications are user-friendly and effective. Contact us today to learn more about our web and mobile application development services.
+                        </p>
+                    </div>
+                </div>
+                <div class="img-contanier">
+                    <img src="{% static 'assets/images/testing.jpg' %}" class="img-fluid">
+                </div>
+            </div>
+        
+        </div>
+    </article>
+{% endblock body  %}
+    
+    

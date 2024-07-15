@@ -1,0 +1,351 @@
+{% extends 'main/inner.html' %} {% load static %} {% block title %} Internet
+Connectivity {% endblock title %} {% block breadcrumb %}
+<div id="breadcrumb">
+  <h2>Internet Connectivity</h2>
+  <ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{% url 'main:home' %}">Home</a></li>
+    <li class="breadcrumb-item">
+      <a href="{% url 'main:home' %}#services">Secvices</a>
+    </li>
+    <li class="breadcrumb-item active">Internet Connectivity</li>
+  </ul>
+</div>
+{% endblock breadcrumb %} 
+{% block body %}
+  <section
+    class="hero"
+    style="background-image: url('/static/assets/images/internet-bg.jpg')"
+  >
+    <article>
+      <div class="img-contanier">
+        <div
+          class="carousel slide carousel-dark w-100 carousel-fade"
+          data-bs-ride="carousel"
+          id="showroom"
+        >
+          <ol class="carousel-indicators">
+            <li
+              class="active"
+              data-bs-target="#showroom"
+              data-bs-slide-to="0"
+            ></li>
+            <li data-bs-target="#showroom" data-bs-slide-to="1"></li>
+            <li data-bs-target="#showroom" data-bs-slide-to="2"></li>
+            <li data-bs-target="#showroom" data-bs-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <img src="{% static 'assets/images/internet-lan.jpg' %}" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img src="{% static 'assets/images/satelite.jpg' %}" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img src="{% static 'assets/images/network.jpg' %}" alt="" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img src="{% static 'assets/images/fibre.jpg' %}" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div>
+          <h2>We Provide Quality Internet Solutions</h2>
+          <p>
+            In today's digital age, having reliable and fast internet connectivity
+            is more important than ever. Whether you're an individual working from
+            home or a business owner looking to increase productivity, having a
+            reliable internet connection is essential.
+          </p>
+          <div>
+            <a
+              class="btn btn-outline-success"
+              href="https://wa.me/2348060371100?text=I%20need%20yor%20internet%20cnnection%20services"
+              >Get started <i class="bi bi-phone"></i
+            ></a>
+            <a href="#" class="btn btn-outline-warning ms-0 ms-sm-2 mt-1 mt-sm-0"
+              >Shop for one <i class="bi bi-cart"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section class="body">
+    <p style="border-left: 2px solid; padding-left: 1rem; border-color: #777">
+      At <span class="emp">Oludigital Ventures</span>, we offer a variety of
+      internet connectivity solutions to meet your needs. We offer both wired and
+      wireless internet connectivity options, including Mobile broadband
+      <span class="mark"
+        >(Mobile Bordband internet is the internet used by phones laptops mifi and
+        other devices)</span
+      >
+      ,cable, DSL, fiber optic, and satellite internet. We also provide 5G,4G and
+      3G internet solutions depending on your needs. Each option has its own set
+      of advantages and disadvantages, so we'll work with you to determine the
+      best for your needs.
+    </p>
+    <p>
+      The different types of internet connectivity have their own unique benefits
+      and drawbacks. For example, cable internet is typically very fast, but it
+      can be expensive and is only available in certain areas. DSL is less
+      expensive and available in more areas, but it's typically slower than cable
+      internet. Fiber optic internet is the fastest option, but it can also be the
+      most expensive. Satellite internet is available almost everywhere, but it
+      can be slower and more expensive than other options. We can help you choose
+      the best option for your needs based on your budget, location, and internet
+      usage.
+    </p>
+    <section>
+      <h3 class="section-title">Internet Types</h3>
+      <p class="sm-only text-info">*scroll digonally to view full table</p>
+      <div class="table-responsive">
+        <table class="table table-bordered table-responsive" id="internettypes">
+          <thead>
+            <tr>
+              <th class="text-capitalize">Mobile Bordband</th>
+              <th class="text-capitalize">cable internet</th>
+              <th class="text-capitalize">DSL internet</th>
+              <th class="text-capitalize">fiber optic internet</th>
+              <th class="text-capitalize">satellite internet</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <table class="table table-borderless table-striped">
+                  <thead>
+                    <tr>
+                      <th>Advantages</th>
+                      <th>Disadvantages</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Faster than traditional broadband in some cases</td>
+                      <td>
+                        May be slower than traditional broadband in some cases
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Widely available</td>
+                      <td>May not be available in all areas</td>
+                    </tr>
+                    <tr>
+                      <td>Supports a wide range of devices</td>
+                      <td>Reception can be spotty in some areas</td>
+                    </tr>
+                    <tr>
+                      <td>No wires or cables required</td>
+                      <td>May have limited data caps</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td>
+                <table class="table table-borderless table-striped">
+                  <thead>
+                    <tr>
+                      <th>Advantages</th>
+                      <th>Disadvantages</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Faster speeds than DSL or satellite internet</td>
+                      <td>More expensive than some other types of internet</td>
+                    </tr>
+                    <tr>
+                      <td>Widespread availability</td>
+                      <td>Less reliable than fiber optic internet</td>
+                    </tr>
+                    <tr>
+                      <td>Can be bundled with other services</td>
+                      <td>May not be available in all areas</td>
+                    </tr>
+                    <tr>
+                      <td>Doesn't require a clear line of sight</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td>
+                <table class="table table-borderless table-striped">
+                  <thead>
+                    <tr>
+                      <th>Advantages</th>
+                      <th>Disadvantages</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Often more affordable than other types of internet</td>
+                      <td>Slower speeds than cable or fiber optic internet</td>
+                    </tr>
+                    <tr>
+                      <td>Available in many areas, even rural areas</td>
+                      <td>May not be available in all areas</td>
+                    </tr>
+                    <tr>
+                      <td>Generally more reliable than satellite internet</td>
+                      <td>Not as reliable as fiber optic internet</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Not as sensitive to weather conditions as satellite
+                        internet
+                      </td>
+                      <td>May require a phone line</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td>
+                <table class="table table-borderless table-striped">
+                  <thead>
+                    <tr>
+                      <th>Advantages</th>
+                      <th>Disadvantages</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Extremely fast speeds, often over 1,000 Mbps</td>
+                      <td>Can be more expensive than other types of internet</td>
+                    </tr>
+                    <tr>
+                      <td>Very reliable</td>
+                      <td>Not as widely available as DSL or cable internet</td>
+                    </tr>
+                    <tr>
+                      <td>Future-proof, since it uses the latest technology</td>
+                      <td>
+                        Installation can be more complicated than other types of
+                        internet
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Not as affected by weather as other types of internet
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td>
+                <table class="table table-borderless table-striped">
+                  <thead>
+                    <tr>
+                      <th>Advantages</th>
+                      <th>Disadvantages</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        Available almost anywhere, even in very remote areas
+                      </td>
+                      <td>Not as fast as other types of internet</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Can be a good option for people who don't have access to
+                        other types of internet
+                      </td>
+                      <td>Can be less reliable, especially in bad weather</td>
+                    </tr>
+                    <tr>
+                      <td>Doesn't require a phone line or cable connection</td>
+                      <td>
+                        Can have high latency, which can cause problems with
+                        online gaming and video calls
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        Typically more expensive than other types of internet
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="comparison">
+      <h3>Comparison</h3>
+      <div class="text-muted text-end note">
+        <p>Data on this table may vary depending on your location</p>
+        <p class="sm-only text-info">*scroll diagonally so view remaing table</p>
+      </div>
+      <div class="table-responsive">
+        <table id="comparism" class="table table-bordered table-hover table-sm">
+          <thead>
+            <tr>
+              <th class="text-capitalize">catigories</th>
+              <th class="text-capitalize">Mobile Bordband</th>
+              <th class="text-capitalize">cable internet</th>
+              <th class="text-capitalize">DSL internet</th>
+              <th class="text-capitalize">fiber optic internet</th>
+              <th class="text-capitalize">satellite internet</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-muted bg">Speed</td>
+              <td>1 Mbps -> +500 Mbps</td>
+              <td>5 Mbps -> +1,000 Mbps (1 Gbps)</td>
+              <td>1 Mbps -> +100 Mbps</td>
+              <td>25 Mbps -> +10,000 Mbps (10 Gbps)</td>
+              <td>1 Mbps -> +100 Mbps</td>
+            </tr>
+            <tr>
+              <td class="text-muted bg">Availability</td>
+              <td>Widely available</td>
+              <td>Widespread availability</td>
+              <td>High availability</td>
+              <td>Low availability</td>
+              <td>Very high availability</td>
+            </tr>
+            <tr>
+              <td class="text-muted">Affordability</td>
+              <td>Very affordable</td>
+              <td>Expensive</td>
+              <td>Moderatly affordable</td>
+              <td>Very expensive</td>
+              <td>Moderatly affordable</td>
+            </tr>
+            <tr>
+              <td class="text-muted">Reliability</td>
+              <td>Highly reliable</td>
+              <td>Low reliability</td>
+              <td>Moderatly reliable</td>
+              <td>Very reliable</td>
+              <td>Low reliability (affected by weather)</td>
+            </tr>
+            <tr>
+              <td class="text-muted">Weather</td>
+              <td>sensitive to weather</td>
+              <td>Mostly immune to weather</td>
+              <td>Not as sensitive to weather</td>
+              <td>Immune to weather</td>
+              <td>Very sensitive to weather</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </section>
+{% endblock body %}
